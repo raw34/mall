@@ -33,7 +33,7 @@ func (l *GetOrderLogic) GetOrder(req *types.OrderReq) (resp *types.OrderReply, e
 		return nil, err
 	}
 
-	if user.Name != "test" {
+	if user.Name != "test user" {
 		return nil, errors.New("用户不存在")
 	}
 
